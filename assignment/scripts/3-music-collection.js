@@ -52,19 +52,30 @@ let album7 = {
 }
 
 addToCollection(myCollection, album1.title, album1.artist, album1.yearPublished);
-console.log(myCollection);
+console.log(myCollection[0]);
 addToCollection(myCollection, album2.title, album2.artist, album2.yearPublished);
-console.log(myCollection);
+console.log(myCollection[1]);
 addToCollection(myCollection, album3.title, album3.artist, album3.yearPublished);
-console.log(myCollection);
+console.log(myCollection[2]);
 addToCollection(myCollection, album4.title, album4.artist, album4.yearPublished);
-console.log(myCollection);
+console.log(myCollection[3]);
 addToCollection(myCollection, album5.title, album5.artist, album5.yearPublished);
-console.log(myCollection);
+console.log(myCollection[4]);
 addToCollection(myCollection, album6.title, album6.artist, album6.yearPublished);
-console.log(myCollection);
+console.log(myCollection[5]);
 addToCollection(myCollection, album7.title, album7.artist, album7.yearPublished);
+console.log(myCollection[6]);
 console.log(myCollection);
+function showCollection(collection) {
+  for(let album of collection) { 
+    console.log(`Title by ${album.artist}, published in ${album.yearPublished}`);
+
+  }
+}
+showCollection(myCollection);
+
+
+
 
 
 
