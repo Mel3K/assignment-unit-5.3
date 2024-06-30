@@ -1,6 +1,25 @@
 console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 let myCollection =[];
+console.log('in my collection', myCollection);
+const collection =[];
+console.log('in collection', collection);
+
+
+function addToCollection(collection, title, artist, yearPublished) {
+
+}
+
+
+//   function collection (title, artist, yearPublished){
+//   Const album = { 
+//   let album.title = "title";
+//   let album.artist = "artist;,
+//   let album.yearPublished = 'yearPublished'}
+//   }
+//     console.log(myCollection, title, artist, yearPublished, collection);
+
+// }
 
 
 
