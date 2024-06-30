@@ -74,6 +74,32 @@ function showCollection(collection) {
 }
 showCollection(myCollection);
 
+let artistFound=[];
+let x = album 
+
+function findByArtist(collection, artist){
+  for (var prop in collection ) {
+
+    if (prop === artist) {
+      artistFound.push(prop);
+    }
+    }
+  }
+  findByArtist(myCollection, );
+  console.log(artistFound);
+
+  //console.log('mycollection', myCollection,"artistFound", artistFound);
+
+
+//   album - 
+//   for(let item of album.artist) {
+//       if (item === whatToFind) {
+//     artistFound.push(item);
+//     }
+//       }
+//     }
+// findByArtist(myCollection, "Genesis");
+// console.log(artistFound);
 
 
 
