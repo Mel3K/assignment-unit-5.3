@@ -66,27 +66,36 @@ console.log(myCollection[5]);
 addToCollection(myCollection, album7.title, album7.artist, album7.yearPublished);
 console.log(myCollection[6]);
 console.log(myCollection);
-function showCollection(collection) {
-  for(let album of collection) { 
-    console.log(`Title by ${album.artist}, published in ${album.yearPublished}`);
 
+function showCollection(collection) {
+
+  for(let album of collection) { 
+    console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
   }
 }
 showCollection(myCollection);
 
-let artistFound=[];
-let x = album 
+
 
 function findByArtist(collection, artist){
-  for (var prop in collection ) {
-
-    if (prop === artist) {
-      artistFound.push(prop);
+  let artistFound=[];
+  for (let album of collection ) {
+    if (album.artist === artist) {
+      artistFound.push(album);
     }
     }
+    return artistFound;
   }
-  findByArtist(myCollection, );
   console.log(artistFound);
+
+let foundAlbums = findByArtist(myCollection, "Genesis");
+console.log("Genesis", foundAlbums);
+
+foundAlbums = findByArtist(myCollection, "Mumford & Sons");
+console.log("Mumford & Sons", foundAlbums);
+
+
+
 
   //console.log('mycollection', myCollection,"artistFound", artistFound);
 
